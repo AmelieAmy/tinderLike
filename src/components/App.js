@@ -1,9 +1,16 @@
 import React from 'react';
 
+// components
+import Header from "./header"
+import TinderCard from "./tinderCard"
+
 const App = () =>
 {
     return (
-        <h1>test</h1>
+        <>
+            <Header />
+            <TinderCard />
+        </>
     );
 }
 
