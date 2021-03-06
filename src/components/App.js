@@ -1,16 +1,19 @@
 import React from 'react';
+import
+{
+    Switch,
+    Route
+} from "react-router-dom";
 
 // components
-import Header from "./header"
-import TinderCard from "./tinderCard"
+import Home from './home'
 
 const App = () =>
 {
     return (
-        <>
-            <Header />
-            <TinderCard />
-        </>
+        <Switch>
+            <Route path="/" component={Home} exact/>
+        </Switch>
     );
 }
 
