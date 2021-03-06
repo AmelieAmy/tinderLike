@@ -1,17 +1,17 @@
 .card
 {
     position: relative;
-    width: 500px;
-    padding: 20px;
+    width: 400px;
+    padding: 10px;
     max-width: 85vw;
-    height: 60vh;
+    height: 70vh;
     border-radius: 20px;
     background-size: cover;
     background-position: top;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.card > h3
+.card > h1
 {
     position: absolute;
     color: white;

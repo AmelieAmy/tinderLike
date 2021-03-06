@@ -1,9 +1,11 @@
-import React, { useState }  from 'react';
+import React, { useState, useEffect }  from 'react';
 
 // assets
-import img1 from '../assets/img1.jpg'
-import img4 from '../assets/img4.jpg'
-import TinderCard from "react-tinder-card"
+// import img1 from '../assets/img1.jpg'
+// import img2 from '../assets/img2.jpg'
+// import img4 from '../assets/img4.jpg'
+import TinderCard from 'react-tinder-card'
+import database from '../assets/firebase'
 
 // styles
 import "../style/tinderCards.css"
@@ -11,23 +13,25 @@ import "../style/tinderCards.css"
 
 const TinderCards = () =>
 {
-    const [people, setPeople] = useState([
-        {
-            name: "Judith",
-            cover: img1
-        },
-        {
-            name: "Sasha",
-            cover: img4
-        }
-    ]);
+    const [people, setPeople] = useState([]);
 
+    useEffect(() => {
+        const unsubscribe =
+        database.collection('people').onSnapshot(snapshot => (
+            setPeople(snapshot.docs.map((doc) => doc.data())
+        )))
+
+        return () => {
+            unsubscribe();
+        }
+
+    }, [])
 
     return(
         <div className="tinderCards__cardContainer" >
             {people.map((person) => (
                 <TinderCard className="swipe" key={person.name} preventSwipe={ [ 'up', 'down']} >
-                    <div style={{backgroundImage: `url(${person.cover})` }} className="card">
+                    <div style={{backgroundImage: `url(${person.url})` }} className="card">
                         <h1>{person.name}</h1>
                     </div>
                 </TinderCard>
