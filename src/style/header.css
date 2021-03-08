@@ -1,4 +1,19 @@
 header
 {
-    background-color: red;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px 0px;
+}
+
+header img
+{
+    width: 40px;
+}
+
+.header__icons
+{
+    padding: 10px;
 }
