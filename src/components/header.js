@@ -19,9 +19,11 @@ const Header = ({ backButton }) =>
     return (
         <header>
             { backButton ? 
-                ( <IconButton onClick={ () => history.replace(backButton) } >
-                    <ArrowBackIosIcon fontSize="large" className="header__icons back_icon" />
-                </IconButton>
+                ( <div className="back_icon" >
+                    <IconButton onClick={ () => history.replace(backButton) } >
+                        <ArrowBackIosIcon fontSize="large" className="header__icons" />
+                    </IconButton>
+                </div>
                 ) : (
                 <Link to="/account">
                     <IconButton>

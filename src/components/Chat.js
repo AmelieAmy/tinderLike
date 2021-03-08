@@ -2,7 +2,7 @@ import React from "react";
 
 // components
 import Header from './header'
-import TinderCard from './tinderCards'
+import Chats from './chats'
 import BottomNav from './bottomNav'
 
 // assets
@@ -10,15 +10,15 @@ import BottomNav from './bottomNav'
 // styles
 
 
-const Chats = () =>
+const Chat = () =>
 {
     return(
         <>
-            <Header />
-            <TinderCard />
+            <Header backButton="/" />
+            <Chats />
             <BottomNav />
         </>
     )
 }
 
-export default Chats;
+export default Chat;
