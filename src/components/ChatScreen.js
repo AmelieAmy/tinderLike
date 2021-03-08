@@ -12,6 +12,7 @@ import '../style/chatScreen.css'
 
 const ChatScreen = () => {
 
+    const [ input, setInput] = useState('');
     const [messages, setMessages] = useState([
         {
             name:"Bibi",
@@ -27,6 +28,14 @@ const ChatScreen = () => {
             message: "Plouf"
         }
     ])
+    
+    const handleSend = (e) =>
+    {
+        e.preventDefault();
+
+        setMessages([...messages, { message: input}]);
+        setInput('');
+    }
 
     return (
         <div className="chatScreen" >
@@ -44,6 +53,10 @@ const ChatScreen = () => {
                 </div>
                 )
             )) }
+            <form className="chatScreen__input" >
+                <input className="chatScreen__inputField" value={input} onChange={(e) => setInput(e.target.value) } type="text" placeholder="Type a message..." />
+                <button onClick={handleSend} className="chatScreen__inputButton" >Send</button>
+            </form>
         </div>
     )
 }
