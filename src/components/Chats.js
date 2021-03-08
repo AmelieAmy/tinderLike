@@ -10,7 +10,7 @@ import BottomNav from './bottomNav'
 // styles
 
 
-const home = () =>
+const Chats = () =>
 {
     return(
         <>
@@ -21,4 +21,4 @@ const home = () =>
     )
 }
 
-export default home;
+export default Chats;
