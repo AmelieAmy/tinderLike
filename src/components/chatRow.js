@@ -5,7 +5,7 @@ import Avatar from "@material-ui/core/Avatar";
 import '../style/chatRow.css'
 
 
-const chatRow = ({ name, message, profilePic, timestamp }) =>
+const chatRow = ({ name, message, profilePic, timeStamp }) =>
 {
     return (
         <div className="chatRow" >
@@ -14,7 +14,7 @@ const chatRow = ({ name, message, profilePic, timestamp }) =>
                 <h2>{name}</h2>
                 <p>{message}</p>
             </div>
-            <p className="chat__timestamp" >{timestamp}</p>
+            <p className="chat__timestamp" >{timeStamp}</p>
         </div>
     )
 }
