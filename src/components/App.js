@@ -7,14 +7,14 @@ import
 
 // components
 import Home from './Home'
-import Chats from './Chats'
+import Chat from './Chat'
 
 const App = () =>
 {
     return (
         <Switch>
             <Route path="/" component={Home} exact/>
-            <Route path="/chats" component={Chats}/>
+            <Route path="/chat" component={Chat}/>
         </Switch>
     );
 }

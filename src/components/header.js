@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 // style
 import "../style/header.css"
@@ -14,13 +16,17 @@ const header = () =>
 {
     return (
         <header>
-            <IconButton>
-                <PersonIcon fontSize="large" className="header__icons" />
-            </IconButton>
+            <Link to="/">
+                <IconButton>
+                    <PersonIcon fontSize="large" className="header__icons" />
+                </IconButton>
+            </Link>
             <img src={Logo} alt="blabla" />
-            <IconButton>
-                <QuestionAnswerIcon fontSize="large" className="header__icons" />
-            </IconButton>
+            <Link to="/chat">
+                <IconButton>
+                    <QuestionAnswerIcon fontSize="large" className="header__icons" />
+                </IconButton>
+            </Link>
         </header>
     );
 }
