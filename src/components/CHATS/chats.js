@@ -4,7 +4,7 @@ import React from 'react'
 import ChatRow from './chatRow'
 
 // style
-import '../style/chats.css'
+import '../../style/chats.css'
 
 
 const chats = () => {

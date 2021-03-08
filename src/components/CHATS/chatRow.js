@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Avatar from "@material-ui/core/Avatar";
 
 // style
-import '../style/chatRow.css'
+import '../../style/chatRow.css'
 
 
 const chatRow = ({ name, message, profilePic, timeStamp }) =>

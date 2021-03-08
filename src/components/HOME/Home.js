@@ -1,9 +1,9 @@
 import React from "react";
 
 // components
-import Header from './header'
+import Header from '../header'
 import TinderCards from './tinderCards'
-import BottomNav from './bottomNav'
+import BottomNav from '../bottomNav'
 
 // assets
 

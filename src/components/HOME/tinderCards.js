@@ -2,10 +2,10 @@ import React, { useState, useEffect }  from 'react';
 
 // assets
 import TinderCard from 'react-tinder-card'
-import database from '../assets/firebase'
+import database from '../../assets/firebase'
 
 // styles
-import "../style/tinderCards.css"
+import "../../style/tinderCards.css"
 
 
 const TinderCards = () =>

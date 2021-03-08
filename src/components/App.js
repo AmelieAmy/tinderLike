@@ -2,9 +2,9 @@ import React from 'react';
 import { Switch, Route } from "react-router-dom";
 
 // components
-import Home from './Home'
-import Chat from './Chat'
-import ChatScreen from './ChatScreen'
+import Home from './HOME/Home'
+import Chat from './CHATS/Chat'
+import ChatScreen from './CHATS/ChatScreen'
 
 
 const App = () =>

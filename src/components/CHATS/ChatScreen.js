@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 
 // components
-import Header from './header'
+import Header from '../header'
 
 // assets
 import Avatar from "@material-ui/core/Avatar";
 
 // styles
-import '../style/chatScreen.css'
+import '../../style/chatScreen.css'
 
 
 const ChatScreen = () => {
