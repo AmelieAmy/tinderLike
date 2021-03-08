@@ -3,10 +3,12 @@
     width: 100%;
     max-width: 480px;
     position: fixed;
-    bottom: 3vh;
+    padding: 1vh 0vw 3vh;
+    bottom: 0px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: #F7F8FA;
 }
 
 .BottomNav .MuiIconButton-root
@@ -17,33 +19,33 @@
 
 .bottomNav__repeat
 {
-    padding: 10px !important;
-    margin: 10px !important;
+    padding: 5px !important;
+    margin: 5px !important;
     color: #e3e5e9 !important;
 }
 
 .bottomNav__left
 {
-    padding: 20px !important;
+    padding: 10px !important;
     color: #FE5067 !important;
 }
 
 .bottomNav__star
 {
-    padding: 10px !important;
-    margin: 10px !important;
+    padding: 5px !important;
+    margin: 5px !important;
     color: #38C8F7 !important;
 }
 
 .bottomNav__right
 {
-    padding: 20px !important;
+    padding: 10px !important;
     color: #21EABC !important;
 }
 
 .bottomNav__lightning
 {
-    padding: 10px !important;
-    margin: 10px !important;
+    padding: 5px !important;
+    margin: 5px !important;
     color: #B444F2 !important;
 }

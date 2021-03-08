@@ -2,7 +2,7 @@ import React  from 'react';
 
 // assets
 import ReplayIcon from "@material-ui/icons/Replay";
-import CloseIcon from "@material-ui/icons/Close";
+import CloseRoundedIcon from '@material-ui/icons/CloseRounded';
 import StarRateIcon from "@material-ui/icons/StarRate";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import FlashOnIcon from "@material-ui/icons/FlashOn";
@@ -20,7 +20,7 @@ const bottomNav = () =>
                 <ReplayIcon fontSize="large" />
             </IconButton>
             <IconButton className="bottomNav__left" >
-                <CloseIcon fontSize="large" />
+                <CloseRoundedIcon fontSize="large" />
             </IconButton>
             <IconButton className="bottomNav__star" >
                 <StarRateIcon fontSize="large" />

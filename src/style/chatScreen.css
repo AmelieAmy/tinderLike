@@ -1,6 +1,8 @@
 .chatScreen
 {
+    background-color: #F7F8FA;
     width: 100%;
+    height: 98vh;
 }
 
 .chatScreen__machingInfos
@@ -33,4 +35,33 @@
     color: white;
     padding: 15px;
     border-radius: 22px;
+}
+
+.chatScreen__input
+{
+    display: flex;
+    padding: 5px 0px;
+    width: 100%;
+    max-width: 480px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.chatScreen__inputField
+{
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+}
+
+.chatScreen__inputButton
+{
+    border: none;
+    margin-right: 25px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: red;
+    background-color: white;
 }
