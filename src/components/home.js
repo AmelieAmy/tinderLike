@@ -2,7 +2,8 @@ import React from "react";
 
 // components
 import Header from './header'
-import TinderCard from './tinderCard'
+import TinderCard from './tinderCards'
+import BottomNav from './bottomNav'
 
 // assets
 
@@ -15,6 +16,7 @@ const home = () =>
         <>
             <Header />
             <TinderCard />
+            <BottomNav />
         </>
     )
 }

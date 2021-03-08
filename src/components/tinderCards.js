@@ -1,9 +1,6 @@
 import React, { useState, useEffect }  from 'react';
 
 // assets
-// import img1 from '../assets/img1.jpg'
-// import img2 from '../assets/img2.jpg'
-// import img4 from '../assets/img4.jpg'
 import TinderCard from 'react-tinder-card'
 import database from '../assets/firebase'
 
