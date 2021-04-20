@@ -19,12 +19,12 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAbeMNHHFfWDZhqO3Y6VhJ4c_4oeaQt8b0",
-    authDomain: "tinder-like-86524.firebaseapp.com",
-    projectId: "tinder-like-86524",
-    storageBucket: "tinder-like-86524.appspot.com",
-    messagingSenderId: "570922168510",
-    appId: "1:570922168510:web:d25ae7b9d56f285804aeef"
+    apiKey: "AIzaSyDLekRWawbODPPylevJaE9tGQzUioRPTWY",
+    authDomain: "tinderlike-a2c64.firebaseapp.com",
+    projectId: "tinderlike-a2c64",
+    storageBucket: "tinderlike-a2c64.appspot.com",
+    messagingSenderId: "64174600278",
+    appId: "1:64174600278:web:1d7bf2498ac742f9640bf7"
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
