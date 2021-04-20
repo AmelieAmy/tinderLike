@@ -3,7 +3,6 @@ import React from "react";
 // components
 import Header from '../header'
 import Chats from './chats'
-import BottomNav from '../bottomNav'
 
 // assets
 
@@ -16,7 +15,6 @@ const Chat = () =>
         <>
             <Header backButton="/" />
             <Chats />
-            <BottomNav />
         </>
     )
 }
